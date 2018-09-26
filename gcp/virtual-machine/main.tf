@@ -4,19 +4,19 @@ provider "google" {
   region      = "${var.region}"
 }
  
-resource "google_compute_instance" "${var.instance_name}" {
+resource "google_compute_instance" "terraform-test-instance" {
   count        = 1
-  name         = "test${count.index + 1}"
+  name         = "terraform-test-instance-${count.index + 1}"
   machine_type = "f1-micro"
   zone         = "${var.region}"
  
-  disk {
-    image = "debian-7-wheezy-v20160301"
+  boot_disk {
+    initialize_params {
+      image = "debian-7-wheezy-v20160301"
+    }
   }
 
-  tags {
-    Name = "test-instance"
-  }
+  tags = ["test-instance"]
 
   network_interface {
     network = "default"
