@@ -16,7 +16,7 @@ resource "google_compute_instance" "terraform-test-instance" {
     }
   }
 
-  tags = ["test-instance-1"]
+  tags = ["test-instance"]
 
   network_interface {
     network = "default"
