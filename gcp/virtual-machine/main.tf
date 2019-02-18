@@ -3,7 +3,8 @@ provider "google" {
   project     = "${var.project}"
   zone      = "${var.zone}"
 }
-/*
+
+
 resource "google_compute_instance" "terraform-test-instance" {
   count        = 1
   name         = "terraform-test-instance-${count.index + 1}"
@@ -23,4 +24,3 @@ resource "google_compute_instance" "terraform-test-instance" {
     access_config {}
   }
 }
-*/
