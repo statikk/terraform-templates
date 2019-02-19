@@ -1,6 +1,7 @@
 variable "zone" {
 }
 
+/*
 resource "google_compute_instance" "terraform-test-instance_1" {
   count        = 1
   name         = "terraform-test-instance-${count.index + 1}"
@@ -20,3 +21,4 @@ resource "google_compute_instance" "terraform-test-instance_1" {
     access_config {}
   }
 }
+*/

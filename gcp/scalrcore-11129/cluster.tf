@@ -1,3 +1,4 @@
+/*
 data "google_client_config" "current" {}
 
 data "google_container_engine_versions" "default" {
@@ -39,3 +40,4 @@ output cluster_region {
 output cluster_zone {
   value = "${google_container_cluster.terraform_cluster_1.zone}"
 }
+*/
