@@ -9,3 +9,7 @@ variable "project" {
 variable "instance_name" {
   default = "terraform-test-instance"
 }
+
+variable "instance_count" {
+  default = 1
+}
