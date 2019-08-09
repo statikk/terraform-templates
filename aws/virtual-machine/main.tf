@@ -23,7 +23,6 @@ resource "aws_instance" "terraform-test-instance" {
     Name = "test-instance"
     timestamp = "${timestamp()}"
   }
-
   lifecycle {
     ignore_changes = ["tags"]
   }
