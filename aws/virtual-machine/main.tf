@@ -20,7 +20,7 @@ resource "aws_instance" "terraform-test-instance" {
   instance_type   = "${var.instance_type}"
 
   tags = {
-    Name = "test-instance"
+    Name = "test-instance1"
     timestamp = "${timestamp()}"
   }
 
