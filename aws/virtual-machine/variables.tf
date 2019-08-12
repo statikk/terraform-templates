@@ -7,11 +7,11 @@ variable "instance_type" {
 }
 
 
-variable "instance_type" {
-  default = "m3.medium"
+variable "access_key" {
+  default = ""
 }
 
 
-variable "instance_type" {
-  default = "m3.medium"
+variable "secret_key" {
+  default = ""
 }
