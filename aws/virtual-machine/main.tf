@@ -1,5 +1,7 @@
 provider "aws" {
   region = "${var.region}"
+  secret_key = "1"
+  access_key = "2"
 }
 
 data "aws_ami" "ubuntu" {
