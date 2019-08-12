@@ -5,3 +5,4 @@ variable "region" {
 variable "instance_type" {
   default = "m3.medium"
 }
+
