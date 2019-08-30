@@ -31,4 +31,3 @@ data "aws_ami" "ubuntu" {
 #     ignore_changes = ["tags"]
 #   }
 # }
-
