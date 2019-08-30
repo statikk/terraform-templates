@@ -1,8 +1,9 @@
 provider "aws" {
-  secret_key = "${var.secret_key}"
-  access_key = "${var.access_key}"
+  secret_key = "${var.scalr_aws_secret_key}"
+  access_key = "${var.scalr_aws_access_key}"
   region = "${var.region}"
 }
+
 
 data "aws_ami" "ubuntu" {
   most_recent = true
