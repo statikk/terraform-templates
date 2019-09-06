@@ -13,3 +13,4 @@ resource "aws_instance" "s-tf" {
   tags = {
     test-env-owner = "<o.timoshyn@scalr.com>"
 }
+  }
