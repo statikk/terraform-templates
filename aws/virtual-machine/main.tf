@@ -24,7 +24,7 @@ resource "aws_instance" "terraform-test-instance" {
   instance_type   = "${var.instance_type}"
 
   tags = {
-    Name = "Sasha-TY-instance"
+    Name = "Sasha-TYYYYYYY-instance"
     timestamp = "${timestamp()}"
     test-env-owner = "o.timoshyn@scalr.com"
   }
