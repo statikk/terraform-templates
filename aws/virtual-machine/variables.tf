@@ -3,7 +3,7 @@ variable "region" {
 }
 
 variable "instance_type" {
-  default = "t2.nano"
+  default = "t2.micro"
 }
 
 variable "scalr_aws_access_key" {
