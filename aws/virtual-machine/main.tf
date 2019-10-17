@@ -27,6 +27,22 @@ resource "aws_instance" "terraform-test-instance" {
     timestamp = "${timestamp()}"
     test-env-owner = "o.timoshyn@scalr.com"
   }
+  
+  resource "aws_security_group" "group_one" {
+        vpc_id = var.vpc_id
+          tags = {
+     "test-env-owner" = "o.timoshy@scalr.com"
+  }
+        name = "one"
+}
+
+resource "aws_security_group" "group_two" {
+        vpc_id = var.vpc_id
+          tags = {
+     "test-env-owner" = "o.timoshy@scalr.com"
+  }
+        name = "two"
+}
 
   lifecycle {
     ignore_changes = ["tags"]
