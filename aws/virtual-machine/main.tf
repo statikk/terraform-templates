@@ -4,10 +4,6 @@ provider "aws" {
   region = "${var.region}"
 }
 
-module "instance" {
-  source = "./../without-variables"
-}
-
 data "aws_ami" "ubuntu" {
   most_recent = true
   filter {
