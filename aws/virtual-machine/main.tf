@@ -2,6 +2,7 @@ terraform {
   backend "remote" {
     hostname = "2e42503f36eb.test-env.scalr.com"
     organization = "tf-acc1env1"
+    token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJhdC1zajBwbDg0dWN2bmxkOGciLCJpc3MiOiJ1c2VyIn0.6Nm2uMN0a9BCKexVU1qyHsxCARdkimR2iDTXmQAGEWY"
     workspaces {
       name = "noVCS03"
     }
