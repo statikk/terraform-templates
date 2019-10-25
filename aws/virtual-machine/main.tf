@@ -1,3 +1,13 @@
+terraform {
+  backend "remote" {
+    hostname = "2e42503f36eb.test-env.scalr.com"
+    organization = "tf-acc1env1"
+    workspaces {
+      name = "noVCS03"
+    }
+  }
+}
+
 provider "aws" {
   secret_key = "${var.scalr_aws_secret_key}"
   access_key = "${var.scalr_aws_access_key}"
