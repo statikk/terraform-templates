@@ -3,7 +3,7 @@ variable "region" {
 }
 
 variable "instance_type" {
-  default = "m3.medium"
+  default = "t2.small"
 }
 
 variable "scalr_aws_access_key" {
