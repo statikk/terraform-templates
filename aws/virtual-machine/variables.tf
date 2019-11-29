@@ -6,10 +6,6 @@ variable "instance_type" {
   default = "m3.medium"
 }
 
-variable "tf" {
-  default = "02"
-}
-
 variable "scalr_aws_access_key" {
 
 }
