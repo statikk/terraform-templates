@@ -7,7 +7,7 @@ variable "instance_type" {
 }
 
 variable "tf" {
-  type = list
+  type = string
 }
 
 variable "scalr_aws_access_key" {
