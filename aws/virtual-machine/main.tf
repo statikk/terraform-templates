@@ -1,13 +1,3 @@
-terraform {
-  backend "remote" {
-    hostname = "2e42503f36eb.test-env.scalr.com"
-    organization = "tf-acc1env1"
-    token = ""
-    workspaces {
-      name = "noVCS03"
-    }
-  }
-}
 
 provider "aws" {
   region = "${var.region}"
