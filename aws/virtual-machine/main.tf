@@ -2,6 +2,12 @@ provider "aws" {
   region = "${var.region}"
 }
 
+module "vpc" {
+	source  = "320828dff7e0.test-env.scalr.com/org-sgpvfvrkj5ao2j0/vpc/aws"
+	version = "2.21.0"
+	# insert 8 required variables here.
+}
+
 data "aws_ami" "ubuntu" {
   most_recent = true
   filter {
