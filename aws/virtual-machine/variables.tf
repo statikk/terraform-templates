@@ -3,5 +3,5 @@ variable "region" {
 }
 
 variable "instance_type" {
-  default = "ts.small"
+  default = "t2.small"
 }
