@@ -24,7 +24,7 @@ resource "aws_instance" "terraform-test-instance" {
     Name = "SashaT-instance-000"
 
     timestamp = "${timestamp()}"
-    test-env-owner = "o.timoshyn@scalr.com"
+    test-env-owner = "o.timoshyn@gmail.com"
     owner = "o.timoshyn"
   }
   
